@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132864353-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-132864353-1');
+    </script>
+
+    <title>PCIFY - Credit Card Detection for Salesforce</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,300,600,900,800,700,200,100' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS-->
+    <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/plugins/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="assets/plugins/pe-icon-7-stroke/css/helper.css">
+    <link rel="stylesheet" href="assets/plugins/owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/owl-carousel/assets/owl.theme.default.min.css">       
+    <link rel="stylesheet" href="assets/plugins/fullPage.js/jquery.fullpage.css">
+    
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+</head> 
+<body class="faqs-page">   
+
+<style type="text/css">
+
+    .logo-padding {
+        position:absolute;
+        top:0;
+        top:-60px;
+        left:0
+    }
+
+</style>  
+    
+    <nav id="myNavmenu" class="navbar navmenu text-center d-block" role="navigation">
+	    <a href="#" id="navmenu-close" class="navmenu-close">&times;</a>
+        <ul class="list-unstyled menu-links">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <!-- <li class="nav-item"><a href="pricing.html">Pricing</a></li> -->
+            <li class="nav-item active"><a href="faqs.html">FAQs</a></li>
+            <!-- <li class="nav-item"><a href="jobs.html">Jobs</a></li> -->
+            <!-- <li class="nav-item"><a href="job-single.html">Job Single</a></li> -->
+            <!-- <li class="nav-item"><a href="blog.html">Blog</a></li> -->
+            <!-- <li class="nav-item"><a href="blog-post.html">Blog Post</a></li> -->
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+            <!-- <li class="nav-item last"><a href="404.html">404</a></li> -->
+        </ul>
+        <ul class="social-icons list-inline">
+                        <li class="list-inline-item"><a href="https://twitter.com/riitiirco"><i class="fab fa-twitter"></i></a></li>                   
+                        <li class="list-inline-item"><a href="https://www.facebook.com/riitiir"><i class="fab fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/company/riitiir/"><i class="fab fa-linkedin-in"></i>                  
+        </ul> 
+
+        <ul class="list-unstyled download-buttons">
+            <li class="app-store"><a target="_blank" href="https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000EcvUUUAZ"><img class="img-fluid d-block" src="assets/images/buttons/Available-on-Appexchange.png" alt="" /></a></li>
+        </ul><!--//list-unstyled-->
+        
+    </nav>  
+    
+    <div class="canvas-wrapper" id="canvas-wrapper">
+        <!-- ******HEADER****** --> 
+        <header id="header" class="header fixed-top">  
+            <div class="container">
+                <h1 class="logo-padding">
+                    <a href="index.html"><img class="img-fluid" src="assets/images/pcify/logo.png" height="5" width="190" alt=""></a>
+                </h1><!--//logo-->
+                <div class="social-container text-center">
+                    <ul class="social-icons list-inline">
+                        <li class="list-inline-item"><a href="https://twitter.com/riitiirco"><i class="fab fa-twitter"></i></a></li>                   
+                        <li class="list-inline-item"><a href="https://www.facebook.com/riitiir"><i class="fab fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/company/riitiir/"><i class="fab fa-linkedin-in"></i>                   
+                    </ul> 
+                </div>            
+                
+                <div class="navbar-wrapper">
+                  <span class="navbar-label">MENU</span>
+                  <button type="button" class="navbar-toggle navmenu-hide" id="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div><!--//navbar -->
+            </div><!--//container-->
+        </header><!--//header-->   
+        
+        <article class="faqs article gradient-4">
+            <div class="container text-center">
+                <div class="row">       
+                    <div class="col-lg-10 col-12 mr-lg-auto ml-lg-auto">         
+                        <h2 class="title">Frequently Asked Questions</h2>
+                        <p class="intro">If the following FAQs don't address your question <br />then please contact us at <a href="#">contactus@riitiir.com</a></p>
+<!--                         <section class="search-section">
+                            <form class="searchbox">
+                                <label class="sr-only" for="search-form">Search</label>
+                                <div class="form-group">
+                                    <input id="search-form" name="search-form" type="text" class="form-control" placeholder="Search questions...">
+                                    <button type="submit" class="btn btn-cta btn-cta-primary"><i class="fas fa-search"></i></button>
+                                </div>                            
+                            </form>
+                        </section><!--//search-section -->
+                         <section class="faqs-section text-center">                        
+                            <div class="faqs-tabbed tabpanel">
+                                <!-- Nav tabs -->
+<!--                                 <ul class="nav nav-tabs justify-content-center" role="tablist">
+                                    <li class="nav-item"><a class="nav-link active" href="#cat1" aria-controls="cat1" role="tab" data-toggle="tab">Top 10</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#cat2" aria-controls="cat2" role="tab" data-toggle="tab">Features</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#cat3" aria-controls="cat3" role="tab" data-toggle="tab">Pricing</a></li>
+                                    <li class="nav-item" class="last"><a class="nav-link" href="#cat4" aria-controls="cat4" role="tab" data-toggle="tab">Support</a></li>
+                                </ul>                            
+                                <!-- Tab panes -->
+                                <div class="tab-content text-left">
+                                    <div role="tabpanel" class="tab-pane-1 tab-pane fade show active" id="cat1">
+                                        <h3 class="subtitle text-center">Most Common Questions</h3>
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title"><a data-parent="#accordion"
+                                                data-toggle="collapse" class="card-toggle" href="#faq1-1"><span class="pe-icon pe-7s-plus"></span>Salesforce is PCI DSS Compliant - why do I need PCIFY?</a></h4>
+                                            </div>
+                                
+                                            <div class="panel-collapse  collapse" id="faq1-1">
+                                                <div class="card-body">
+                                                    Salesforce is indeed PCI DSS Compliant - but what about your Salesforce instance?
+                                                    If you use Email-to-Case, Web-to-Case, API to Case, Customer Communities, or store any external communication at all, you run the risk of customers sending you their credit card numbers. When this happens - your instance is no longer PCI compliant.
+                                                </div>
+                                            </div>
+                                        </div><!--//card-->
+                                
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title"><a data-parent="#accordion"
+                                                data-toggle="collapse" class="card-toggle" href="#faq1-2"><span class="pe-icon pe-7s-plus"></span>Are you storing these credit card numbers somewhere?</a></h4>
+                                            </div>
+                                
+                                            <div class="card-collapse collapse" id="faq1-2">
+                                                <div class="card-body">
+                                                    No! PCIFY is a 100% Native Salesforce application - there are no 3rd party APIs or packages which in any way store sensitive information.
+                                                </div>
+                                            </div>
+                                        </div><!--//card-->
+                                
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title"><a data-parent="#accordion"
+                                                data-toggle="collapse" class="card-toggle" href="#faq1-3"><span class="pe-icon pe-7s-plus"></span>Do you collect any personal information in the app?</a></h4>
+                                            </div>
+                                
+                                            <div class="card-collapse collapse" id="faq1-3">
+                                                <div class="card-body">
+                                                    We do not collect any information - zero data is sent outside of your Salesforce instance. We have the email address of the user who installs the application, but this is outside of both the app and your Salesforce instance.
+                                                </div>
+                                            </div>
+                                        </div><!--//card-->
+                                        
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title"><a data-parent="#accordion"
+                                                data-toggle="collapse" class="card-toggle" href="#faq1-4"><span class="pe-icon pe-7s-plus"></span>What do you do with any data processed by the app?</a></h4>
+                                            </div>
+                                
+                                            <div class="card-collapse collapse" id="faq1-4">
+                                                <div class="card-body">
+                                                Nothing! PCIFY does not send or receive data of any kind from your Salesforce instance. Our whole business model is to allow customers to remove sensitive PII data themselves, not to take it and store it somewhere.
+                                                </div>
+                                            </div>
+                                        </div><!--//card--> 
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title"><a data-parent="#accordion"
+                                                data-toggle="collapse" class="card-toggle" href="#faq1-5"><span class="pe-icon pe-7s-plus"></span>You’ve installed PCIFY - great! Now what?</a></h4>
+                                            </div>
+                                
+                                            <div class="card-collapse collapse" id="faq1-5">
+                                                <div class="card-body">
+                                                    PCIFY is already blocking credit card numbers from entering your Salesforce org!
+                                                    When PCIFY is installed in your Salesforce environment, no new records can enter Salesforce with a
+                                                    credit card number. Getting rid of the credit card numbers already in your Salesforce requires an Audit.
+                                                    Check out the PCIFY User Guide for more information on how to run an Audit.
+                                                </div>
+                                            </div>
+                                        </div><!--//card-->
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title"><a data-parent="#accordion"
+                                                data-toggle="collapse" class="card-toggle" href="#faq1-6"><span class="pe-icon pe-7s-plus"></span>How does PCIFY Work?</a></h4>
+                                            </div>
+                                
+                                            <div class="card-collapse collapse" id="faq1-6">
+                                                <div class="card-body">
+                                                    PCIFY uses a proprietary combination of Regular Expressions and the Luhn algorithm. A credit card
+                                                    number must pass both criteria in order to be masked:
+                                                    1. Matches an existing Detection Pattern (PCIFY comes with 14 different types)
+                                                    2. Passes the Luhn algorithm
+                                                </div>
+                                            </div>
+                                        </div><!--//card-->
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title"><a data-parent="#accordion"
+                                                data-toggle="collapse" class="card-toggle" href="#faq1-7"><span class="pe-icon pe-7s-plus"></span>But what if I have non-credit card number PII I want to detect (e.g. social security numbers) ?</a></h4>
+                                            </div>
+                                
+                                            <div class="card-collapse collapse" id="faq1-7">
+                                                <div class="card-body">
+                                                    Great! PCIFY comes with several settings which will effectively “skip” the Luhn algorithm.
+                                                </div>
+                                            </div>
+                                        </div><!--//card-->
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title"><a data-parent="#accordion"
+                                                data-toggle="collapse" class="card-toggle" href="#faq1-8"><span class="pe-icon pe-7s-plus"></span>But what if I don’t want to mask the numbers?</a></h4>
+                                            </div>
+                                
+                                            <div class="card-collapse collapse" id="faq1-8">
+                                                <div class="card-body">
+                                                    Great! You can also simply “Report” the records which are flagged as containing credit card numbers.
+                                                    PCIFY will generate a report with all of the flagged records. Then, you can manually remove the numbers
+                                                    from the records later.
+                                                </div>
+                                            </div>
+                                        </div><!--//card-->
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title"><a data-parent="#accordion"
+                                                data-toggle="collapse" class="card-toggle" href="#faq1-9"><span class="pe-icon pe-7s-plus"></span>What about bank information, CVVs, social security numbers, and other PII?</a></h4>
+                                            </div>
+                                
+                                            <div class="card-collapse collapse" id="faq1-9">
+                                                <div class="card-body">
+                                                    Any type of PII is detectable and maskable with PCIFY! Check out the PCIFY User Guide for how to set up your own Detection Patterns.
+                                                </div>
+                                            </div>
+                                        </div><!--//card-->
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title"><a data-parent="#accordion"
+                                                data-toggle="collapse" class="card-toggle" href="#faq1-10"><span class="pe-icon pe-7s-plus"></span>Sometimes customers take screenshots of their credit card numbers and send us an attachment - can PCIFY detect these?</a></h4>
+                                            </div>
+                                
+                                            <div class="card-collapse collapse" id="faq1-10">
+                                                <div class="card-body">
+                                                    Yes! We have built an add-on product called SecureAttachment. This extends PCIFY to detect any type of PII in Attachments and Files (Salesforce Content). Please send us an email for more information!
+                                                </div>
+                                            </div>
+                                        </div><!--//card-->
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title"><a data-parent="#accordion"
+                                                data-toggle="collapse" class="card-toggle" href="#faq1-11"><span class="pe-icon pe-7s-plus"></span>How much does PCIFY cost?</a></h4>
+                                            </div>
+                                
+                                            <div class="card-collapse collapse" id="faq1-11">
+                                                <div class="card-body">
+                                                    See our <a target="_blank" href="https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000EcvUUUAZ">AppExchange Listing</a> for complete pricing.
+                                                </div>
+                                            </div>
+                                        </div><!--//card-->
+                                        
+                                    </div><!--//tab-pane-1-->
+                                    <div role="tabpanel" class="tab-pane-2 tab-pane fade" id="cat2">
+                                        <h3 class="subtitle text-center">Features Questions</h3>
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title"><a data-parent="#accordion"
+                                                data-toggle="collapse" class="card-toggle" href="#faq2-1"><span class="pe-icon pe-7s-plus"></span>How to viverra sit amet quam eget lacinia?</a></h4>
+                                            </div>
+                                
+                                            <div class="panel-collapse  collapse" id="faq2-1">
+                                                <div class="card-body">
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                                    accusamus terry richardson ad squid. 3 wolf moon officia
+                                                    aute, non cupidatat skateboard dolor brunch. Food truck
+                                                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                                    sunt aliqua put a bird on it squid single-origin coffee
+                                                    nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                                    helvetica.
+                                                </div>
+                                            </div>
+                                        </div><!--//card-->
+                                
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title"><a data-parent="#accordion"
+                                                data-toggle="collapse" class="card-toggle" href="#faq2-2"><span class="pe-icon pe-7s-plus"></span>What is the ipsum dolor sit amet quam tortor?</a></h4>
+                                            </div>
+                                
+                                            <div class="card-collapse collapse" id="faq2-2">
+                                                <div class="card-body">
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                                    accusamus terry richardson ad squid. 3 wolf moon officia
+                                                    aute, non cupidatat skateboard dolor brunch. Food truck
+                                                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                                    sunt aliqua put a bird on it squid single-origin coffee
+                                                    nulla assumenda shoreditch et.
+                                                </div>
+                                            </div>
+                                        </div><!--//card-->
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title"><a data-parent="#accordion"
+                                                data-toggle="collapse" class="card-toggle" href="#faq2-3"><span class="pe-icon pe-7s-plus"></span>How to richardson ad squid?</a></h4>
+                                            </div>
+                                
+                                            <div class="card-collapse collapse" id="faq2-3">
+                                                <div class="card-body">
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                                    accusamus terry richardson ad squid. 3 wolf moon officia
+                                                    aute, non cupidatat skateboard dolor brunch. Food truck
+                                                    quinoa nesciunt laborum eiusmod.
+                                                </div>
+                                            </div>
+                                        </div><!--//card-->
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title"><a data-parent="#accordion"
+                                                data-toggle="collapse" class="card-toggle" href="#faq2-4"><span class="pe-icon pe-7s-plus"></span>Do you provide nesciunt laborum?</a></h4>
+                                            </div>
+                                
+                                            <div class="card-collapse collapse" id="faq2-4">
+                                                <div class="card-body">
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                                    accusamus terry richardson ad squid. 3 wolf moon officia
+                                                    aute, non cupidatat skateboard dolor brunch. Food truck
+                                                    quinoa nesciunt laborum eiusmod.
+                                                </div>
+                                            </div>
+                                        </div><!--//card-->
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title"><a data-parent="#accordion"
+                                                data-toggle="collapse" class="card-toggle" href="#faq2-5"><span class="pe-icon pe-7s-plus"></span>Do you provide nesciunt laborum?</a></h4>
+                                            </div>
+                                
+                                            <div class="card-collapse collapse" id="faq2-5">
+                                                <div class="card-body">
+                                                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus faucibus, nunc eget efficitur tempor, libero lacus rhoncus arcu, quis mattis elit neque ut felis. Pellentesque eget aliquam tortor. Ut dignissim dignissim dui.
+                                                </div>
+                                            </div>
+                                        </div><!--//card-->
+                                    </div><!--//tab-pane-2-->
+                                    <div role="tabpanel" class="tab-pane-3 tab-pane fade" id="cat3">
+                                        <h3 class="subtitle text-center">Pricing Questions</h3>
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title"><a data-parent="#accordion"
+                                                data-toggle="collapse" class="card-toggle" href="#faq3-1"><span class="pe-icon pe-7s-plus"></span>How much viverra sit amet quam eget lacinia?</a></h4>
+                                            </div>
+                                
+                                            <div class="panel-collapse  collapse" id="faq3-1">
+                                                <div class="card-body">
+                                                    Maecenas sit amet sapien ullamcorper, vestibulum tortor ac, tristique diam. Duis volutpat tempor nulla, vitae aliquam lorem dignissim quis. Donec eget porta augue. Cras lectus orci, facilisis vel nibh vitae, ultrices cursus tellus. Pellentesque sollicitudin rhoncus
+                                                    helvetica.
+                                                </div>
+                                            </div>
+                                        </div><!--//card-->
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title"><a data-parent="#accordion"
+                                                data-toggle="collapse" class="card-toggle" href="#faq3-2"><span class="pe-icon pe-7s-plus"></span>Can I  fames ac turpis egestas?</a></h4>
+                                            </div>
+                                
+                                            <div class="panel-collapse  collapse" id="faq3-2">
+                                                <div class="card-body">
+                                                    Aenean nec leo at neque consequat bibendum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce porta, ante sed hendrerit elementum, est erat pellentesque urna, luctus semper nunc nisl eu arcu.
+                                                </div>
+                                            </div>
+                                        </div><!--//card-->
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title"><a data-parent="#accordion"
+                                                data-toggle="collapse" class="card-toggle" href="#faq3-3"><span class="pe-icon pe-7s-plus"></span>When is  fames ac turpis egestas?</a></h4>
+                                            </div>
+                                
+                                            <div class="panel-collapse  collapse" id="faq3-3">
+                                                <div class="card-body">
+                                                    Duis eu lacinia felis. Maecenas sit amet sapien ullamcorper, vestibulum tortor ac, tristique diam. Duis volutpat tempor nulla, vitae aliquam lorem dignissim quis. Donec eget porta augue. Cras lectus orci, facilisis vel nibh vitae, ultrices cursus tellus. Pellentesque sollicitudin rhoncus turpis, et ultrices dolor viverra a. Praesent mollis dui malesuada ante mattis porttitor. Nullam mauris purus.
+                                                </div>
+                                            </div>
+                                        </div><!--//card-->
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title"><a data-parent="#accordion"
+                                                data-toggle="collapse" class="card-toggle" href="#faq3-4"><span class="pe-icon pe-7s-plus"></span>When is  fames ac turpis egestas?</a></h4>
+                                            </div>
+                                
+                                            <div class="panel-collapse  collapse" id="faq3-4">
+                                                <div class="card-body">
+                                                    Integer id diam in nulla tristique varius id mattis nisl. Suspendisse feugiat nibh arcu, nec cursus elit congue in. Ut volutpat justo nec enim euismod, eget interdum mi ornare. Aenean nec ornare justo. Sed malesuada pretium lectus eu viverra. Phasellus a odio non nulla sagittis iaculis. Donec dictum sagittis purus non viverra. Morbi dictum venenatis nisl, ut dictum augue vehicula ultricies. Nulla facilisi. Curabitur eu dictum nisl.
+                                                </div>
+                                            </div>
+                                        </div><!--//card-->
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title"><a data-parent="#accordion"
+                                                data-toggle="collapse" class="card-toggle" href="#faq3-5"><span class="pe-icon pe-7s-plus"></span>How to  malesuada ante mattis?</a></h4>
+                                            </div>
+                                
+                                            <div class="panel-collapse  collapse" id="faq3-5">
+                                                <div class="card-body">
+                                                    Praesent mollis dui malesuada ante mattis porttitor. Nullam mauris purus, pellentesque nec tincidunt id, auctor vel enim. Donec aliquet imperdiet luctus. Donec lacinia ante tortor, et dapibus est tincidunt eget.                                            
+                                                </div>
+                                            </div>
+                                        </div><!--//card-->
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title"><a data-parent="#accordion"
+                                                data-toggle="collapse" class="card-toggle" href="#faq3-6"><span class="pe-icon pe-7s-plus"></span>How to  lacinia ante tortor?</a></h4>
+                                            </div>
+                                
+                                            <div class="panel-collapse  collapse" id="faq3-6">
+                                                <div class="card-body">
+                                                    Praesent mollis dui malesuada ante mattis porttitor. Nullam mauris purus, pellentesque nec tincidunt id, auctor vel enim. Donec aliquet imperdiet luctus. Donec lacinia ante tortor, et dapibus est tincidunt eget.                                            
+                                                </div>
+                                            </div>
+                                        </div><!--//card-->
+                                        
+                                    </div><!--//tab-pane-3-->
+                                    <div role="tabpanel" class="tab-pane tab-pane fade" id="cat4">
+                                        <h3 class="subtitle text-center">Support Questions</h3>
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title"><a data-parent="#accordion"
+                                                data-toggle="collapse" class="card-toggle" href="#faq4-1"><span class="pe-icon pe-7s-plus"></span>Where can I viverra sit amet quam eget lacinia?</a></h4>
+                                            </div>
+                                
+                                            <div class="panel-collapse  collapse" id="faq4-1">
+                                                <div class="card-body">
+                                                    Maecenas sit amet sapien ullamcorper, vestibulum tortor ac, tristique diam. Duis volutpat tempor nulla, vitae aliquam lorem dignissim quis. Donec eget porta augue. Cras lectus orci, facilisis vel nibh vitae, ultrices cursus tellus. Pellentesque sollicitudin rhoncus helvetica.
+                                                </div>
+                                            </div>
+                                        </div><!--//card-->
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title"><a data-parent="#accordion"
+                                                data-toggle="collapse" class="card-toggle" href="#faq4-2"><span class="pe-icon pe-7s-plus"></span>How long amet quam eget lacinia?</a></h4>
+                                            </div>
+                                
+                                            <div class="panel-collapse  collapse" id="faq4-2">
+                                                <div class="card-body">
+                                                    Mauris mi erat, vehicula nec accumsan vitae, facilisis id dui. Mauris tincidunt tortor a tellus pretium, nec pulvinar ligula viverra. Nullam nulla tellus, fermentum ac rhoncus bibendum, convallis eu justo. Aenean nec leo at neque consequat bibendum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce porta, ante sed hendrerit elementum, est erat pellentesque urna, luctus semper nunc nisl eu arcu. Etiam in efficitur quam, eget euismod lacus. Nam a magna quis lorem pharetra tempor vitae a tortor. Curabitur quis elit id orci porta viverra sit amet sit amet quam. Aliquam pretium ullamcorper odio id eleifend. Etiam vel convallis odio.
+                                                </div>
+                                            </div>
+                                        </div><!--//card-->
+                                        
+                                    </div><!--//tab-pane-4-->
+                                </div><!--//tab-content-->                           
+                            </div><!--//tab-panel-->
+                        </section><!--//faqs-section-->
+                        <section class="lead text-center">
+                            <h3 class="subtitle">Still need help?</h3>
+                            <a class="btn btn-cta btn-cta-primary" href="contact.html">Contact Us</a>
+                        </section><!--//lead-->
+                    </div>
+                </div><!--//row-->
+            </div><!--//container-->
+        </article><!--//article-->    
+            
+        <!-- ******FOOTER****** --> 
+        <footer class="footer">
+            <div class="container text-center">
+                <nav class="links">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="about.html">About</a></li>
+                        <!-- <li class="list-inline-item"><a href="press.html">Press</a></li> -->
+                        <!-- <li class="list-inline-item"><a href="pricing.html">Pricing</a></li> -->
+                        <li class="list-inline-item"><a href="faqs.html">FAQs</a></li>
+                        <!-- <li class="list-inline-item"><a href="jobs.html">Jobs</a></li> -->
+                        <!-- <li class="list-inline-item"><a href="blog.html">Blog</a></li> -->
+                        <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+                    </ul>                    
+                </nav>
+                <ul class="social-icons list-inline">
+                    <li class="list-inline-item"><a href="https://twitter.com/3rdwave_themes"><i class="fab fa-twitter"></i></a></li>                        
+                    <li class="list-inline-item"><a href="https://www.facebook.com/3rdwavethemes"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.facebook.com/3rdwavethemes"><i class="fab fa-instagram"></i></a></li>
+                    <li class="list-inline-item last"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>                    
+                </ul>
+                <ul class="links legal-links list-inline">
+                    <li class="list-inline-item"><a href="#">Privacy</a></li>
+                    <li class="last list-inline-item"><a href="#">Terms</a></li>
+                </ul><!--//legal-links-->
+                <small class="copyright">Copyright 2019 <a href="http://www.riitiir.com/">Riitiir, LLC</a></small>
+                
+            </div><!--//container-->
+        </footer><!--//footer-->
+    </div><!--//canvas-wrapper-->
+     
+    <!-- Main Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>                                                         
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    
+    <!-- FAQs panels -->
+    <script type="text/javascript" src="assets/js/faqs-custom.js"></script>
+    
+</body>
+</html> 
+
