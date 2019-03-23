@@ -11,12 +11,6 @@
       gtag('config', 'UA-132864353-1');
     </script>
 
-    <!-- ReCaptcha -->
-<!--     <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script>
-     function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
-    </script> -->
-
     <title>PCIFY - Credit Card Detection for Salesforce</title>
     <!-- Meta -->
     <meta charset="utf-8">
@@ -177,13 +171,11 @@
                                             </select>
                                         </div>
                                          <div class="col-12 form-group">
-                                            <!-- <div class="g-recaptcha" data-sitekey="6LdtAZkUAAAAALj6mHGXJaqsCel44bBVk4DcN11U"></div><br>  -->
                                             <button type="submit" class="btn btn-block btn-cta btn-cta-primary">Send Message</button>
                                         </div>                           
                                     </div><!--//row-->
                                 </div>                            
                                 <div id="form-messages"></div>
-                                <input type=hidden name='captcha_settings' value='{"keyname":"norobots","fallback":"true","orgId":"00Df4000003jSwM","ts":""}'>
                                 <input type=hidden name="oid" value="00Df4000003jSwM">
                                 <input type=hidden id="lead_source" name="lead_source" value="pcify contact form">
                                 <input type=hidden name="retURL" value="http://www.pcify.io/">  
