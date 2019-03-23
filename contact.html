@@ -55,7 +55,7 @@
 	    <a href="#" id="navmenu-close" class="navmenu-close">&times;</a>
         <ul class="list-unstyled menu-links">
             <li class="nav-item"><a href="index.html">Home</a></li>
-            <li class="nav-item"><a href="about.html">About</a></li>
+            <!-- <li class="nav-item"><a href="about.html">About</a></li> -->
             <!-- <li class="nav-item"><a href="press.html">Press</a></li> -->
             <!-- <li class="nav-item"><a href="pricing.html">Pricing</a></li> -->
             <li class="nav-item"><a href="faqs.html">FAQs</a></li>
@@ -67,10 +67,9 @@
             <!-- <li class="nav-item last"><a href="404.html">404</a></li> -->
         </ul>
         <ul class="social-icons list-inline">
-            <li class="list-inline-item"><a href="https://twitter.com/3rdwave_themes"><i class="fab fa-twitter"></i></a></li>                        
-            <li class="list-inline-item"><a href="https://www.facebook.com/3rdwavethemes"><i class="fab fa-facebook-f"></i></a></li>
-            <li class="list-inline-item"><a href="https://www.facebook.com/3rdwavethemes"><i class="fab fa-instagram"></i></a></li>
-            <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>                    
+            <li class="list-inline-item"><a href="https://twitter.com/riitiirco"><i class="fab fa-twitter"></i></a></li>                   
+            <li class="list-inline-item"><a href="https://www.facebook.com/riitiir"><i class="fab fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/company/riitiir/"><i class="fab fa-linkedin-in"></i></a></li>                   
         </ul> 
 
         <ul class="list-unstyled download-buttons">
@@ -88,9 +87,9 @@
                 </h1><!--//logo-->
                 <div class="social-container text-center">
                     <ul class="social-icons list-inline">
-                        <li class="list-inline-item"><a href="https://twitter.com/riitiirco"><i class="fab fa-twitter"></i></a></li>                   
+                        <li class="list-inline-item"><a href="https://twitter.com/riitiirco"><i class="fab fa-twitter"></i></a></li>
                         <li class="list-inline-item"><a href="https://www.facebook.com/riitiir"><i class="fab fa-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/company/riitiir/"><i class="fab fa-linkedin-in"></i>                 
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/company/riitiir/"><i class="fab fa-linkedin-in"></i></a></li>
                     </ul> 
                 </div>            
                 
@@ -123,7 +122,7 @@
                         </div><!--//general-->
                         <div class="support item col-lg-5 col-md-6 col-12 mr-md-auto">
                             <div class="item-inner">
-                                <h2 class="subtitle"><span class="pe-icon pe-7s-help2"></span>Sales</h2>
+                                <h2 class="subtitle"><span class="pe-icon pe-7s-chat"></span>Sales</h2>
                                 <ul class="list-unstyled">
                                     <li><a href="#">contactus@riitiir.com</a></li>
                                     <li>Business Hours: 9am-6pm Mon-Fri ICT (Indochina Time)</li>
@@ -161,18 +160,18 @@
                                             <label class="sr-only" for="description">Your message</label>
                                             <textarea class="form-control" id="description" name="description" placeholder="Enter your message" rows="12" required></textarea>
                                         </div>
-<!--                                         <div class="col-12 form-group">
+                                        <div class="col-12 form-group">
                                             <label class="reason-label" for="reason">Your reason for contacting us:</label>
-                                            <select id="reason" name="reason" class="form-control" required>
+                                            <select id="pcify_io_contact_reason__c" name="pcify_io_contact_reason__c" class="form-control" required>
                                                 <option value="">Please select a reason</option>
-                                                <option value="general">General inquiry</option>
+                                                <option value="estimate">Estimate/Quote</option>
                                                 <option value="support">Support</option>
-                                                <option value="press">PCIFY</option>
-                                                <option value="partnership">SecureAttachment</option>
+                                                <option value="pcify">PCIFY</option>
+                                                <option value="secureattachment">SecureAttachment</option>
                                             </select>
-                                        </div> -->
+                                        </div>
                                          <div class="col-12 form-group">
-                                            <!-- <div class="g-recaptcha" data-sitekey="6LdtAZkUAAAAALj6mHGXJaqsCel44bBVk4DcN11U"></div><br>  -->
+                                            <div class="g-recaptcha" data-sitekey="6LdtAZkUAAAAALj6mHGXJaqsCel44bBVk4DcN11U"></div><br> 
                                             <button type="submit" class="btn btn-block btn-cta btn-cta-primary">Send Message</button>
                                         </div>                           
                                     </div><!--//row-->
@@ -180,13 +179,14 @@
                                 <div id="form-messages"></div>
                                 <input type=hidden name='captcha_settings' value='{"keyname":"recaptcha","fallback":"true","orgId":"00Df4000003jSwM","ts":""}'>
                                 <input type=hidden name="oid" value="00Df4000003jSwM">
+                                <input type=hidden id="lead_source" name="lead_source" value="pcify contact form">
                                 <input type=hidden name="retURL" value="http://www.pcify.io/">  
                             </form><!--//contact-form-->
                         </div><!--//form-container-->
                     </div><!--//row-->
                 </div><!--//section-inner-->
             </section><!--//promo-section-->    
-            <section class="map-section text-center">
+<!--             <section class="map-section text-center">
                 <div class="section-inner container" > 
                     <div class="row">
                         <div class="gmap-wrapper col-lg-10 col-12 ml-lg-auto mr-lg-auto">
@@ -199,16 +199,14 @@
                                 </p>         
                                 <div class="gmap-box">   
                                     <div class="gmap-box-inner">            
-                                    <!--//You need to embed your own google map below-->
-                                    <!--//Ref: https://support.google.com/maps/answer/144361?co=GENIE.Platform%3DDesktop&hl=en -->
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15501.618443644918!2d100.5643788!3d13.7544566!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x631db0e6f616e2fc!2sRHYTHM+Asoke!5e0!3m2!1sen!2s!4v1552892828778" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                                    </div><!--//gmap-box-inner-->
-                                </div><!--//gmap-box-->
-                            </div><!--//gmap-wrapper-inner-->
-                        </div><!--//gmap-wrapper-->
-                    </div><!--//row-->
-                </div><!--//section-inner-->
-            </section><!--//location-container-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>-->
         </article><!--//article-->    
             
         <!-- ******FOOTER****** --> 
@@ -216,7 +214,7 @@
             <div class="container text-center">
                 <nav class="links">
                     <ul class="list-inline">
-                        <li class="list-inline-item"><a href="about.html">About</a></li>
+                        <li class="list-inline-item"><a href="index.html">Home</a></li>
                         <!-- <li class="list-inline-item"><a href="press.html">Press</a></li> -->
                         <!-- <li class="list-inline-item"><a href="pricing.html">Pricing</a></li> -->
                         <li class="list-inline-item"><a href="faqs.html">FAQs</a></li>
@@ -228,12 +226,12 @@
                 <ul class="social-icons list-inline">
                         <li class="list-inline-item"><a href="https://twitter.com/riitiirco"><i class="fab fa-twitter"></i></a></li>                   
                         <li class="list-inline-item"><a href="https://www.facebook.com/riitiir"><i class="fab fa-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/company/riitiir/"><i class="fab fa-linkedin-in"></i>                 
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/company/riitiir/"><i class="fab fa-linkedin-in"></i></a></li>
                 </ul>
-                <ul class="links legal-links list-inline">
+<!--                 <ul class="links legal-links list-inline">
                     <li class="list-inline-item"><a href="#">Privacy</a></li>
                     <li class="last list-inline-item"><a href="#">Terms</a></li>
-                </ul><!--//legal-links-->
+                </ul>//legal-links-->
                 <small class="copyright">Copyright 2019 <a href="http://www.riitiir.com/">Riitiir, LLC</a></small>
                 
             </div><!--//container-->
