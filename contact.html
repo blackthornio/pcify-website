@@ -11,6 +11,12 @@
       gtag('config', 'UA-132864353-1');
     </script>
 
+    <!-- ReCaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+     function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
+    </script>
+
     <title>PCIFY - Credit Card Detection for Salesforce</title>
     <!-- Meta -->
     <meta charset="utf-8">
@@ -251,12 +257,6 @@
     <!-- Form Validation -->
     <script type="text/javascript" src="assets/plugins/jquery.validate.min.js"></script> 
     <script type="text/javascript" src="assets/js/form-validation-custom.js"></script> 
-
-    <!-- ReCaptcha -->
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script>
-     function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
-    </script>
     
 </body>
 </html> 
