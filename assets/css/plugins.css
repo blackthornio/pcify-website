@@ -9818,7 +9818,6 @@ a.text-dark:hover, a.text-dark:focus {
   display: none;
   width: 100%;
   -webkit-tap-highlight-color: transparent;
-
   position: relative;
   z-index: 1; }
   .owl-carousel .owl-stage {
@@ -9826,7 +9825,7 @@ a.text-dark:hover, a.text-dark:focus {
     -ms-touch-action: pan-Y;
     touch-action: manipulation;
     -moz-backface-visibility: hidden;
-  }
+ }
   .owl-carousel .owl-stage:after {
     content: ".";
     display: block;
@@ -9903,6 +9902,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .no-js .owl-carousel {
   display: block; }
+
 .owl-carousel .animated {
   animation-duration: 1000ms;
   animation-fill-mode: both; }
@@ -9921,10 +9921,8 @@ a.text-dark:hover, a.text-dark:focus {
     opacity: 1; }
   100% {
     opacity: 0; } }
-
 .owl-height {
   transition: height 500ms ease-in-out; }
-
 
 .owl-carousel .owl-item {
 }
